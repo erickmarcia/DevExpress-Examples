@@ -1,0 +1,30 @@
+﻿@using Ine.Sih.Csi.Reports
+
+@*<!DOCTYPE html>*@
+
+@*<html>*@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Módulo CSI</title>
+    <link href="..\\img\\home\\CsiLayout.png" rel="shortcut icon" type="image/x-icon" />
+
+    @* Uncomment to use the HtmlEditor control *@
+    @* <script src="https://unpkg.com/devextreme-quill/dist/dx-quill.min.js"></script> *@
+
+    @*<link rel="stylesheet" href="~/css/thirdparty.bundle.css" />*@
+    <link rel="stylesheet" href="~/css/Site.css" />
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/viewer.part.bundle.js"></script>
+    <link rel="stylesheet" href="~/css/viewer.part.bundle.css" />
+    
+</head>
+
+
+@Html.DevExpress().WebDocumentViewer("DocumentViewer").Height("1000px").Bind(new TestReport())
+
+
